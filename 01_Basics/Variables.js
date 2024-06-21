@@ -4,7 +4,10 @@ const num = 34;
 let let_var= "Roushan Kumar";
 var var_variable = "Aman Kumar";
 
-let num1; //by default "undefined" 
+let num1; //by default "undefined"
+
+// var var_variable; -->Ok, can be redeclared var variable
+// let let_var  --> we can't redeclare a let variable
 
 num2 = 5; //possible to declare variable like this, but this is not a good practice
 
