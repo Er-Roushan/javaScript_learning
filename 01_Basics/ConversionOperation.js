@@ -48,3 +48,8 @@ console.log(typeof null_val_to_boolean);    //boolean
 
 
 //in above similar way we can do more conversion according to use.
+
+console.log(true);
+console.log(+true); //1
+// console.log(true+); Not allowed
+console.log(+""); //0
