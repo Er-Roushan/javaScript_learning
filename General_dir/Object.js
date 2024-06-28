@@ -22,6 +22,10 @@ console.log(addObj.myKey)     //undefined
 addObj.name="Aman Kumar";  //update name to Aman Kumar
 console.log(addObj.name);  //Aman Kumar
 
+//hasOwnProperty() --> this method check a property is present or not inside an object
+console.log(addObj.hasOwnProperty("name"));  //true
+console.log(addObj.hasOwnProperty("gender")); //false
+
 /*
 Object.freeze(addObj);     //freeze() function will freeze the modification of properties of passed object
 
