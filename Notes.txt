@@ -1,0 +1,26 @@
+What does enumerable property mean in JavaScript?
+
+link --> https://www.geeksforgeeks.org/what-does-enumerable-property-mean-in-javascript/
+
+Difference between for ..in and for ..of
+
+Key Differences:
+#What they iterate over: for...of iterates over values, while for...in iterates over property keys.
+#Object types: for...of works with iterable objects (arrays, strings, maps, sets, nodeList etc), while for...in works with all objects.
+#Inherited properties: for...in includes inherited properties, while for...of does not.
+
+When to use each:
+#Use for...of when you want to directly access the elements of an iterable object.
+#Use for...in when you want to access the keys or property names of an object.
+
+for...of Loop:
+Iterates over the values of iterable objects like arrays, strings, maps, sets, etc.
+Accesses the elements directly, not their indices or keys.
+
+for...in Loop:
+Iterates over the enumerable property keys of an object.
+Accesses the names of the properties, not the values directly.
+
+
+How to map, reduce and filter a Set element using JavaScript ?
+link --> https://www.geeksforgeeks.org/how-to-map-reduce-and-filter-a-set-element-using-javascript/
