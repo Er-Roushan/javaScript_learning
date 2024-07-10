@@ -82,3 +82,13 @@ Return type of variables in JavaScript
        Object  =>  object
 
 */
+
+/* The JavaScript Symbol is a primitive data type, just like Number, String, Boolean, etc.
+   It represents a unique identifier and can be used in various ways.
+   Symbols are used to create object properties, for example, when you want to assign a unique identifier to an object.
+
+   Key Points about Symbols:
+   Uniqueness: Every symbol you create is unique, even if it has the same description.
+   Hidden Properties: Symbols are not included in for...in loops or Object.keys(), making them suitable for creating "hidden" properties.
+   Global Symbol Registry: You can create global symbols using Symbol.for("key"). This allows multiple scripts to access the same symbol using a shared key.
+*/
