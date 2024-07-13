@@ -24,3 +24,32 @@ Accesses the names of the properties, not the values directly.
 
 How to map, reduce and filter a Set element using JavaScript ?
 link --> https://www.geeksforgeeks.org/how-to-map-reduce-and-filter-a-set-element-using-javascript/
+
+####Prototypes
+a prototype is a mechanism by which objects inherit properties and methods from other objects. Think of it like a blueprint or a template.
+Here's how it works:
+Every object in JavaScript has a built-in property called its prototype. This prototype is itself an object, meaning it can have its own prototype, and so on. This creates a chain of prototypes, known as the prototype chain.
+When you try to access a property or method on an object, JavaScript first looks at the object itself. If it doesn't find it there, it looks at the object's prototype. If it's not there, it looks at the prototype's prototype, and so on, until it reaches the end of the prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+This allows objects to share properties and methods, promoting code reusability and efficiency.
+Example:
+JavaScript
+
+const animal = {
+  eats: true
+};
+
+const rabbit = {
+  jumps: true
+};
+
+// Set rabbit's prototype to animal
+Object.setPrototypeOf(rabbit, animal); 
+
+console.log(rabbit.eats); // true (inherited from animal)
+console.log(rabbit.jumps); // true (own property)
+Key Points:
+Prototypes are the foundation of inheritance in JavaScript.
+The prototype property is used with constructor functions to add properties and methods to all instances of a class.
+The __proto__ property (deprecated in favor of Object.getPrototypeOf()) refers to the prototype of an object.
+link --> https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
+//prototype end 
